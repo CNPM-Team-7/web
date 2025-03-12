@@ -3,62 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chấm Công Nhân Viên</title>
-    <link rel="stylesheet" href="styles.css">
-    
+    <title>Hệ Thống Chấm Công</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="sidebar">
-        <h2>📌 Mục Lục</h2>
+
+    <!-- Thanh tiêu đề -->
+    <header class="header">
+        <h1>Hệ Thống Chấm Công Nhân Viên</h1>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav class="nav">
         <ul>
-            <li>🏠 Trang chủ</li>
-            <li>📜 Lịch sử điểm danh</li>
-            <li>🏢 Quản lý công ty</li>
-            <li>👥 Quản lý nhân viên</li>
-            <li>📅 Lịch làm việc</li>
-            <li>🚀 Xuất công</li>
-            <li>🔐 Thông tin tài khoản</li>
-            <li>⚠️ Báo lỗi</li>
-            <li>⭐ Đánh giá</li>
-            <li>🚪 Đăng xuất</li>
+            <li><a href="#">🏠 Trang Chủ</a></li>
+            <li><a href="#">👨‍💼 Quản Lý Nhân Viên</a></li>
+            <li><a href="#">⏳ Chấm Công</a></li>
+            <li><a href="#">📅 Lịch Sử Chấm Công</a></li>
+            <li><a href="#">📊 Báo Cáo</a></li>
+            <li><a href="#">⚙️ Cài Đặt</a></li>
         </ul>
-    </div>
-    <div class="main-content">
-        <div class="header">
-            <h1>Phần mềm tính lương miễn phí</h1>
-            <button class="salary-btn">Tính lương 365</button>
-        </div>
-        <div class="content">
-            <h2>Tài khoản công ty</h2>
-            <div class="actions">
-                <button>Lịch sử điểm danh</button>
-                <button>Hỗ trợ trực tuyến</button>
-                <button>Thêm công ty con</button>
-                <button>Quản lý ca làm việc</button>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Chức năng</h3>
+            <ul>
+                <li> Xem danh sách nhân viên</li>
+                <li> Thêm/Sửa/Xóa nhân viên</li>
+                <li> Chấm công theo ca</li>
+                <li> Xuất báo cáo</li>
+                <li> Cấu hình hệ thống</li>
+            </ul>
+        </aside>
+
+        <!-- Khu vực hiển thị chính -->
+        <main class="main-content">
+            <h2>📋 Bảng Chấm Công Hôm Nay</h2>
+
+            <!-- Hiển thị đồng hồ thời gian thực -->
+            <div class="clock">
+                ⏰ Thời gian hiện tại: <span id="clock-time">00:00:00</span>
             </div>
-            <h3>Danh sách nhân viên chưa thiết lập lịch làm việc</h3>
-            <table>
+
+            <!-- Nút chấm công -->
+            <button class="button primary" id="check-in">✅ Chấm Công</button>
+
+            <!-- Bảng chấm công -->
+            <table class="table" id="attendance-table">
                 <tr>
-                    <th>Ảnh</th>
-                    <th>(ID) Họ tên</th>
-                    <th>Phòng ban</th>
-                    <th>Email</th>
-                    <th>Số điện thoại</th>
-                    <th>Tên công ty</th>
+                    <th>Họ và Tên</th>
+                    <th>Thời Gian Vào</th>
+                    <th>Thời Gian Ra</th>
+                    <th>Trạng Thái</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn Tú</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Nguyễn Tiến Quân</td>
+                    <td>08:15</td>
+                    <td>17:05</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Võ Đình Hoàng</td>
+                    <td>Vắng</td>
+                    <td>Vắng</td>
+                    <td>❌</td>
                 </tr>
             </table>
-            <h3>Danh sách điểm danh gần đây</h3>
-            <table>
-                <tr>
-                    <th>ID</th>
-                    <th>Họ và tên</th>
-                    <th>Ca</th>
-                    <th>Thời gian</th>
-                    <th>Ngày tháng</th>
-                    <th>Ghi chú</th>
-                </tr>
-            </table>
-        </div>
+        </main>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
