@@ -12,7 +12,7 @@ document.getElementById('check-in').addEventListener('click', function () {
 
     const table = document.getElementById('attendance-table');
     const newRow = table.insertRow(-1);
-    newRow.innerHTML = `<td>Nhân Viên Mới</td><td>${timeString}</td><td>Chưa Ra</td><td>✅</td>`;
+    newRow.innerHTML = `<td>Nhân Viên</td><td>${timeString}</td><td>Chưa Ra</td><td>✅</td>`;
 
     alert("Bạn đã chấm công vào lúc: " + timeString);
 });
