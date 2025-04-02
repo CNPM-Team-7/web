@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chấm Công Nhân Viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Mục Lục</h2>
+        <ul>
+            <li>🏠 Trang chủ</li>
+            <li onclick="location.href='history.html'">📜 Lịch sử điểm danh</li>
+            <li>👥 Quản lý nhân viên</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="header">Chấm Công Nhân Viên</div>
+        <button onclick="addEmployee()">Nhập nhân viên mới</button>
+        <table id="employeeTable">
+            <tr>
+                <th>Stt</th>
+                <th>(ID) Họ tên</th>
+                <th>Phòng ban</th>
+                <th>Email</th>
+                <th>Số điện thoại</th>
+                <th>Thời gian điểm danh</th>
+                <th>Hành động</th>
+            </tr>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

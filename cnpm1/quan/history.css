@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+/* Sidebar (Mục lục) */
+.sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar li {
+    padding: 10px;
+    border-bottom: 1px solid #34495e;
+    cursor: pointer;
+}
+.sidebar li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.sidebar li:hover {
+    background: #1abc9c;
+}
+
+/* Nội dung chính */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    background: #ecf0f1;
+}
+.header {
+    background: linear-gradient(90deg, #3498db, #2c3e50);
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+.content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Bảng */
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #bdc3c7;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background: #34495e;
+    color: white;
+}
+button#deleteHistoryBtn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button#deleteHistoryBtn:hover {
+    background-color: #c0392b;
+}

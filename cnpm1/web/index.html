@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ Thống Chấm Công</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh tiêu đề -->
+    <header class="header">
+        <h1>Hệ Thống Chấm Công Nhân Viên</h1>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav class="nav">
+        <ul>
+            <li><a href="#">🏠 Trang Chủ</a></li>
+            <li><a href="#">👨‍💼 Quản Lý Nhân Viên</a></li>
+            <li><a href="#">⏳ Chấm Công</a></li>
+            <li><a href="#">📅 Lịch Sử Chấm Công</a></li>
+            <li><a href="#">📊 Báo Cáo</a></li>
+            <li><a href="#">⚙️ Cài Đặt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Chức năng</h3>
+            <ul>
+                <li> Xem danh sách nhân viên</li>
+                <li> Thêm/Sửa/Xóa nhân viên</li>
+                <li> Chấm công theo ca</li>
+                <li> Xuất báo cáo</li>
+                <li> Cấu hình hệ thống</li>
+            </ul>
+        </aside>
+
+        <!-- Khu vực hiển thị chính -->
+        <main class="main-content">
+            <h2>📋 Bảng Chấm Công Hôm Nay</h2>
+
+            <!-- Hiển thị đồng hồ thời gian thực -->
+            <div class="clock">
+                ⏰ Thời gian hiện tại: <span id="clock-time">00:00:00</span>
+            </div>
+
+            <!-- Nút chấm công -->
+            <button class="button primary" id="check-in">✅ Chấm Công</button>
+
+            <!-- Bảng chấm công -->
+            <table class="table" id="attendance-table">
+                <tr>
+                    <th>Họ và Tên</th>
+                    <th>Thời Gian Vào</th>
+                    <th>Thời Gian Ra</th>
+                    <th>Trạng Thái</th>
+                </tr>
+                <tr>
+                    <td>Nguyễn Văn Tú</td>
+                    <td>08:00</td>
+                    <td>17:00</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Nguyễn Tiến Quân</td>
+                    <td>08:15</td>
+                    <td>17:05</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <td>Võ Đình Hoàng</td>
+                    <td>Vắng</td>
+                    <td>Vắng</td>
+                    <td>❌</td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
